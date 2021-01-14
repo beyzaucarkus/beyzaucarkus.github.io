@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Benim Evrenim</title>
+<link rel="stylesheet" href="a.css">
+	<style>
+.slider {
+  width: 1320px;
+  text-align: center;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: #D2B48C;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 400px;
+  height: 400px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
+.author-info {
+  background:  #BCAAA4;
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.author-info a {
+  color: white;
+}
+img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #D2B48C;
+}
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>	
+<div class="header">
+ <h1><font size="45" >BENİM EVRENİM</font></h1>
+<h3>KİTAP İNCELEMELERİ</h3>
+</div>
+<div class="gezinti">
+  <a href="index.html">ANASAYFA</a>
+  <a href="kitaplar.html">KİTAPLAR</a>
+  <a href="yazarlar.html">YAZARLAR</a>
+  <a href="iletisim.html">İLETİŞİM</a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a><a href="">    </a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a>	<a href="">    </a>
+	<a href="">    </a> 	<a href="">    </a>
+	<a href="sizden.html">ÖNERİLERİNİZ</a>
+</div>
+	<div align="center">
+<p id="asayfa" align="center">"Bazı kitapların tadına bakılmalıdır, diğerleri yutulmalıdır ve çok azı da çiğnenip hazmedilmelidir." <p align="right" id="asayfaa">Francis Bacon</p><embed src="resim/asayfa3.jpg" width="600" height="200"></p>
+	</div>
+	
+	<b>
+		<br><br><br><fieldset class="aform">
+		<tr><td cospan="2"><table width="1100" border="0" align="center">
+		<legend align="center" id="ul2">İyi Bir Okur Olmak İçin...</legend>
+			<td><div align="right">
+	<embed src="resim/tenor.gif">
+     </div><br></td>
+			<td><ul >
+		<li> Kitap okumak için ayrı bir zaman yaratmak yerine kitap okuyabildiğin bir hayat düzenle.</li>
+		<li> Sadece tek bir türe bağımlı kalmak sana düşündüğün kadar faydalı olmayacaktır.</li>
+		<li>Her kitaptan yoğun bir akıcılık bekleme, yeterince şans verirsen bazı sıkıcı kitapların akıcı kitaplardan daha değerli olduğunu görebilirsin.</li>
+		<li>Bir kitabın sana fazla geldiğini düşünürsen onu beklet, zamanla diğer kitaplar seni o kitabın seviyesine yükseltecektir.</li>
+		<li>Okuduğun kitabın eleştirilerine göz atmanda fayda var. Bunu okuduktan sonra ya da okumadan önce yapabilirsin.</li>
+		<li>Bir türü diğerlerinden daha çok sevsen de asla diğer türlerden uzaklaşma. Bir okuyucu asla taraftar gibi davranmamalıdır.</li>
+		<li>Kitap almak ile yemek almak arasında çok fark yoktur, çok açken genelde yanlış kararlar alırız.</li>
+		<li>Bitirdiğin kitabın üstüne en az bir yarım saat oturup kendinle bir kahve iç.</li>
+			</ul></td>
+				 
+			</table>
+			</td></tr></fieldset>
+		<br><br><br><br><br>
+	<div class="slider" align="center">
+ <!-- <a href="#slide-1" align="center">1</a>
+  <a href="#slide-2" align="center">2</a>
+  <a href="#slide-3" align="center">3</a>
+  <a href="#slide-4" align="center">4</a>
+  <a href="#slide-5" align="center">5</a>
+  <a href="#slide-6" align="center">6</a>
+ <a href="#slide-7" align="center">7</a>
+ <a href="#slide-8" align="center">8</a>
+ <a href="#slide-9" align="center">9</a>-->
+		
+  <div class="slides" align="center">
+    <div id="slide-1" align="center">
+      <img src="resim/gör1.jpg"  >
+    </div>
+    <div id="slide-2" align="center">
+     <img src="resim/gör2.jpg " >
+    </div>
+    <div id="slide-3" align="center">
+     <img src="resim/gör3.jpg "  >
+    </div>
+    <div id="slide-4" align="center">
+      <img src="resim/gör4.jpg "  >
+    </div>
+    <div id="slide-5" align="center">
+      <img src="resim/gör5.jpg "  >
+    </div>
+	  <div id="slide-6" align="center">
+      <img src="resim/gör6.jpg "  >
+    </div>
+	  <div id="slide-7" align="center">
+      <img src="resim/gör7.jpg "  >
+    </div>
+	  <div id="slide-8" align="center">
+      <img src="resim/gör8.jpg "  >
+    </div>
+	  <div id="slide-9" align="center">
+      <img src="resim/gör9.jpg "  >
+    </div>
+  </div>
+</div>		
+	<br><br><br><br><br><fieldset class="aform">
+	<tr><td cospan="2"><table width="1100" border="0" align="center">
+		<legend align="center" id="ul2">Kitap Okumanın Faydalarına Değinelim ...</legend>
+		<td><ul>
+		<li>Düzenli kitap okuyan birinin sıkılması söz konusu olamaz.</li>
+		<li>Düzenli olarak kitap okuyan birinin kelime dağarcığı gelişir.</li>
+		<li>Her kitap size başka hayatlar,başka insanlar,başka karakterler hakkında yeni bakış açıları kazandıracak.Böylece empati yetiniz gelişecek.</li>
+		<li>İyi bir okur olmak yalnızlık ile ilgili kötü düşüncelerinizi ortadan kaldıracaktır.Yalnızlığınızı sevmeye başlayacaksınız.Çünkü kitaplar varken aslında yalnız değilsinizdir...</li>
+		<li>Okurken belki evinizdeki küçük bir odadasınız.Fakat zihninizdeki hayal diyarlarında belki kıtalar aşıyor olacaksınız,belki de zamanı..Geçmişte veya gelecekte bilinmez uygarlıkları keşfedeceksiniz.</li>
+		<li>Kitap okumak belki de normal şartlarda tanıma imkânı bulunamayacak farklı kültürleri öğrenme fırsatı verecektir.</li>
+		<li>Kitap okumak size hayatınızı değiştirmek konusunda yardımcı olabilir.</li>
+		<li>Tüm bu saydıklarım gerçekleşmese bile, kitap okumak başlı başına şahane bir şeydir.Çünkü bizatihi kitaplar şahanedir!</li>
+	</ul></td>
+		
+		<td><div align="right">
+	<embed src="resim/a.gif">
+</div><br></td>
+	
+		</table>	
+			</td></tr></fieldset>
+	</b>
+	<br><br><br><br>
+<div class="footer">
+  <p><b>Sizden de beğendiğiniz kitapları göndermenizi bekliyorum.<br>
+	  <a href="iletisim.html">İLETİŞİM</a> 'den gönderebilirsniz..</b></p>
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+.header {
+  background-color: #D2B48C;
+  padding: 20px;
+  text-align: center;
+ /* border-style: inset;*/
+  border-width: 10px;
+	}
+.gezinti {
+  overflow: hidden;
+  background-color: #BCAAA4;
+}
+.gezinti a {
+  float: left;
+  display: block;
+  color:#f2f2f2; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.gezinti a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#asayfa{
+	font-size: 40px;
+	color:#556B2F;	
+}
+#asayfaa{
+	font-size: 26px;
+	color:#556B2F;
+	
+}
+.footer {
+  background-color: #D2B48C;
+  padding: 10px;
+  text-align: center;
+  border-style: outset;
+}
+#ist{
+border-style: inset;
+}
+#istt{
+	border-style: outset;
+}
+#istd{
+border-style: inset;
+}
+#seri{
+	border-style: groove;
+	border-color: #B22222;
+}
+#ad{
+	border-style: inset;
+}
+#add{
+	border-style: outset;
+}
+#yaz{
+	border-style: inset;
+}
+#yazz{
+	border-style: outset;
+}
+h2{text-shadow: 1px 1px;
+	color:firebrick;
+}
+ul{list-style-type: square;
+	list-style-position: outside;
+	list-style-image: url("resim/gold.jpg");
+	line-height: 1.8;
+	color: black;
+}
+#ul2{font-size: 30px;
+	text-shadow: 1px 1px;
+	color:firebrick;
+}
+#ul3{font-size: 30px;
+	text-shadow: 1px 1px;
+	color: firebrick;
+}
+h3{text-shadow: 1.2px 1.2px;
+	letter-spacing: 3px;
+}
+#aü{
+	border-style: solid;
+}
+h6{line-height: 0.4;
+	text-decoration: underline;
+}
+.aform{
+	border-radius: 15px;
+	border-color: #D2B48C;
+}
+.aform2{
+	border-radius: 15px;
+	border-color: #BCAAA4;
+}
